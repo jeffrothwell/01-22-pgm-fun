@@ -13,7 +13,7 @@ puts "there are #{ntracks} tracks"
 total_play_time = 0
 
 playlist["tracks"].each do |track|
-  total_play_time += track["duration_in_milliseconds"].to_i
+  total_play_time += track["duration_in_milliseconds"]
 end
 
 puts "total play time is #{total_play_time} milliseconds"
